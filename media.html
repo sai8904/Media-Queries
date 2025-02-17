@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Media Queries</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(169, 194, 244);
+            overflow: scroll;
+        }
+        .in-container{
+            margin-top: 70px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .box {
+            width: 300px;
+            height: 500px;
+            margin: 10px;
+
+        }
+        .head{
+            width: 100%;
+            height: 100px;
+            font-size: 40px;
+            background-color: rgb(62, 62, 119);
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            color: white;
+            flex-wrap: wrap;
+        }
+        .rw{
+            margin-top: 20px;
+        }
+        .ff{
+            font-size: 30px;
+        }
+        .box1{
+            background-image: url(bahubali.png);
+            background-size:cover ;
+            box-shadow: 0 0 20px;
+            border-radius: 20px;
+        }
+        .box2{
+            background-image: url(bb2.png);
+            background-size: cover;
+            box-shadow: 0 0 20px;
+            border-radius: 20px;
+        }
+        .box3{
+            background-image: url(salaar.png);
+            background-size: cover;
+            box-shadow: 0 0 20px;
+            border-radius: 20px;
+        }
+        .box4{
+            background-image: url(kalki.png);
+            background-size: cover;
+            box-shadow: 0 0 20px;
+            border-radius: 20px;
+        }
+        .btn{
+            background-color: rgba(100, 100, 233, 0.784);
+            border: none;
+            padding: 15px;
+            margin-left: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .movie{
+            display: flex;justify-content: end;
+            margin-top: 20px;
+            margin-right: 20px;
+            font-size: 20px;
+            color: white;
+            text-shadow: 0 0 40px black;
+        }
+        .tag{
+            color: white;
+            text-shadow: 0 0 50px black;
+            margin: 10px;
+            display: flex;
+            justify-content: end;
+        }
+        @media(max-width: 1100px){
+            .in-container{
+                flex-direction: column;
+                align-items: center;
+            }
+
+        }
+        @media(max-width: 650px){
+            .in-container{
+                flex-direction: row;
+                align-items: center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <p class="rw">RebelWood ... <i class="fa-solid fa-fire ff"></i></p>
+        </div>
+        <div class="in-container">
+
+            <div class="box box1">
+                <p class="movie"><b>Bahubali</b></p>
+                <p class="tag"><b>-The Begining-</b></p>
+                <form>
+                <button class="btn">Watch <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+            </div>
+            <div class="box box2">
+                <p class="movie"><b>Bahubali 2</b></p>
+                <p class="tag"><b>-The Conclusion-</b></p>
+                <form>
+                    <button class="btn">Watch <i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div><div class="box box3">
+                <p class="movie"><b>Salaar</b></p>
+                <p class="tag"><b>-Cease Fire-</b></p>
+                <form>
+                    <button class="btn">Watch <i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div><div class="box box4">
+                <p class="movie"><b>Kalki</b></p>
+                <p class="tag"><b>-2898 AD-</b></p>
+                <form>
+                    <button class="btn">Watch <i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
