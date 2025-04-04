@@ -21,9 +21,9 @@ This project uses **CSS media queries** to dynamically adjust the layout based o
 📌 Laptops & desktops 💻  
 
 ## 📸 Preview  
-![Project Preview](add-your-image-url-here)  
+![Project Preview](https://github.com/sai8904/Media-Queries/blob/main/Screenshot%202025-04-04%20230452.png)  
 
 ## 📂 How to Use  
 1. Clone the repository:  
    ```sh
-   git clone https://github.com/your-github-username/responsive-project.git
+   git clone https://github.com/sai8904/Media-Queries
